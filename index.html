@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="t-js">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h1 class="title text-center m-4">Add User In list</h1>
+                    <label for="user">UserName :</label>
+                    <input type="text" class="form-control" required id="add-user">
+                    <br>
+                    <label for="salary">Salary :</label>
+                    <input type="number" class="form-control" required id="add-salary">
+                    <br>
+                    <button id="btn-add-user" class="btn btn-success"><i class="fas fa-user-plus"></i> Add User</button>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7  pl-4">
+                    <h2 class="title-list mb-4">ALL USER</h2>
+                    <div class="list-group">
+                        <div class="row text-center">
+                            <ul class="border w-100 d-flex flex-column ul-list">
+                                <li class="li-list d-flex w-100"><span class="id-list">ID</span> <span class="user-list">USERNAME</span> <span class="salary-list">Salary</span> 
+                                    <span class="link">
+                                        <!-- <span  class="btn" ><i class="fas fa-user-times"></i></span>
+                                        <span  class="btn" ><i class="fas fa-user-edit"></i></span> -->
+                                        Choose
+                                    </span>
+                                </li>
+                                
+                            </ul>
+                            <!-- <div class="col-1 border">
+                                ID
+                            </div>
+                            <div class="col-6 border">
+                                USERNAME
+                            </div>
+                            <div class="col-3 border">
+                                SALARY
+                            </div>
+                            <div class="col-2 border">
+                                <a href="#" id="edit"><i class="fas fa-user-edit"></i></a>
+                                <a href="#" id="remove"><i class="fas fa-user-times"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h1 class="title text-center mb-3">Edit User</h1>
+                    <label for="edit-id">ID :</label>
+                    <input type="text" required readonly class="form-control" id="edit-id" >
+                    <br>
+                    <label for="edit-user">UserName :</label>
+                    <input type="text" required class="form-control" id="edit-user">
+                    <br>
+                    <label for="edit-salary">Salary :</label>
+                    <input type="number" required class="form-control" id="edit-salary">
+                    <br>
+                    <button id="btn-edit-user" class="btn btn-success"><i class="fas fa-user-edit"></i> Edit User</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
